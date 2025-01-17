@@ -1,7 +1,7 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement } from "chart.js";
 import { Doughnut, Line } from "react-chartjs-2";
 import Navbar from "./Components/Navbar";
-
+import SideBox from "./Components/SideBox";
 ChartJS.register(ArcElement, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement);
 
 const Dashboard = () => {
@@ -39,16 +39,7 @@ const Dashboard = () => {
     <>
     <Navbar></Navbar>
     <div className="flex bg-gray-100 h-screen">
-      {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-lg">
-        <div className="p-6 text-lg font-bold">Logo</div>
-        <ul className="mt-6">
-          <li className="p-4 hover:bg-gray-200 cursor-pointer">Overview</li>
-          <li className="p-4 hover:bg-gray-200 cursor-pointer">Management</li>
-          <li className="p-4 hover:bg-gray-200 cursor-pointer">Mail</li>
-        </ul>
-      </aside>
-
+     <SideBox></SideBox>
       {/* Main Content */}
       <div className="flex-1 p-6">
         {/* Header */}

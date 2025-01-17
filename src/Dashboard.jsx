@@ -1,5 +1,6 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement } from "chart.js";
 import { Doughnut, Line } from "react-chartjs-2";
+import Navbar from "./Components/Navbar";
 
 ChartJS.register(ArcElement, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement);
 
@@ -35,6 +36,8 @@ const Dashboard = () => {
   };
 
   return (
+    <>
+    <Navbar></Navbar>
     <div className="flex bg-gray-100 h-screen">
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-lg">
@@ -96,6 +99,7 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

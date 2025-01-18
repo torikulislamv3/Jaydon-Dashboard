@@ -43,20 +43,29 @@ const Dashboard = () => {
       {/* Main Content */}
       <div className="flex-1 p-6">
         {/* Header */}
-        <div className="bg-gradient-to-r from-green-200 to-green-400 p-6 rounded-lg flex justify-between items-center">
+       <div className="flex gap-x-3 h-[200px]">
+       <div className="bg-gradient-to-r from-green-200 to-green-400 p-6 rounded-lg flex justify-between items-center w-[70%]">
           <div>
-            <h1 className="text-2xl font-bold">Welcome back 👋 Jaydon Frankie</h1>
-            <p className="text-gray-700">If you are going to use a passage of Lorem Ipsum...</p>
+            <h1 className="text-2xl font-bold text-blue-950">Welcome back 👋 <br /> Jaydon Frankie</h1>
+            <p className="text-gray-700">If you are going to use a passage of Lorem Ipsum, you <br />
+            need to be sure that isn't anything
+            </p>
             <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg">Go Now</button>
           </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/150"
-              alt="illustration"
-              className="h-24"
-            />
-          </div>
         </div>
+        <div className="h-[200px] border-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2024/12/28/03/39/vietnam-9295186_1280.jpg"
+              alt="illustration"
+              className="h-[200px] rounded-lg"
+            />
+            <div className="-mt-[100px] ml-2">
+              <span className="text-green-400">RUN PROCCED APP</span> <br />
+              <span className="font-bold text-white text-lg">Continue The Hidden Game Of Dev</span> <br />
+              <span className="text-white">rovident nemo beatae dolorem illo</span>
+            </div>
+          </div>
+       </div>
 
         {/* Metrics */}
         <div className="grid grid-cols-3 gap-6 mt-6">

@@ -39,11 +39,10 @@ const Dashboard = () => {
   return (
     <>
     <Navbar></Navbar>
-    <div className="flex bg-gray-100 h-screen">
+    <div className="flex bg-white h-screen">
      <SideBox></SideBox>
-      {/* Main Content */}
       <div className="flex-1 p-6">
-       <div className="flex gap-x-3 h-[200px]">
+       <div className="flex gap-x-3 h-[180px]">
        <div className="bg-gradient-to-r from-green-200 to-green-400 p-6 rounded-lg flex justify-between items-center w-[70%]">
           <div>
             <h1 className="text-2xl font-bold text-blue-950">Welcome back 👋 <br /> Jaydon Frankie</h1>
@@ -53,11 +52,11 @@ const Dashboard = () => {
             <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg">Go Now</button>
           </div>
         </div>
-        <div className="h-[200px] border-2">
+        <div className="h-[180px] border-2">
             <img
               src="https://cdn.pixabay.com/photo/2024/12/28/03/39/vietnam-9295186_1280.jpg"
               alt="illustration"
-              className="h-[200px] rounded-lg"
+              className="h-[180px] rounded-lg"
             />
             <div className="-mt-[100px] ml-2">
               <span className="text-green-400">RUN PROCCED APP</span> <br />
@@ -68,10 +67,9 @@ const Dashboard = () => {
        </div>
 
        <DashboardCards></DashboardCards>
-
         {/* Charts */}
         <div className="grid grid-cols-2 gap-6 mt-6">
-          <div className="bg-white shadow-md p-4 rounded-lg">
+          <div className="bg-white shadow-md p-10 rounded-lg">
             <h3 className="text-gray-600">Current Download</h3>
             <Doughnut data={donutData} />
           </div>

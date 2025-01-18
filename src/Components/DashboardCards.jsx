@@ -38,7 +38,7 @@ const DashboardCards = () => {
       display="flex"
       justifyContent="space-between"
       gap={3}
-      sx={{ p: 3, backgroundColor: "#f5f5f5" }}
+      sx={{ p:1, backgroundColor: "#f5f5f5" }}
     >
       {stats.map((stat, index) => (
         <Card
@@ -50,8 +50,9 @@ const DashboardCards = () => {
             width: "100%",
             maxWidth: 320,
             p: 3,
-            boxShadow: 3,
+            boxShadow: 1,
             borderRadius: 2,
+            height : "130px"
           }}
         >
           {/* Left Content */}

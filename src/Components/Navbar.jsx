@@ -6,11 +6,10 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { PiFlagCheckeredFill } from "react-icons/pi";
 import { RiEmotionLine } from "react-icons/ri";
 
-
 export default function Navbar() {
   return (
     <div>
-      <div className="navbar bg-white px-10">
+      <div className="navbar bg-white px-10 -mb-5">
   <div className="navbar-start">
     <div>
       <div>

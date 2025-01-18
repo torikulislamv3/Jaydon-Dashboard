@@ -2,6 +2,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend, LineElement, CategorySca
 import { Doughnut, Line } from "react-chartjs-2";
 import Navbar from "./Components/Navbar";
 import SideBox from "./Components/SideBox";
+import DashboardCards from "./Components/DashboardCards";
 ChartJS.register(ArcElement, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement);
 
 const Dashboard = () => {
@@ -42,13 +43,12 @@ const Dashboard = () => {
      <SideBox></SideBox>
       {/* Main Content */}
       <div className="flex-1 p-6">
-        {/* Header */}
        <div className="flex gap-x-3 h-[200px]">
        <div className="bg-gradient-to-r from-green-200 to-green-400 p-6 rounded-lg flex justify-between items-center w-[70%]">
           <div>
             <h1 className="text-2xl font-bold text-blue-950">Welcome back 👋 <br /> Jaydon Frankie</h1>
             <p className="text-gray-700">If you are going to use a passage of Lorem Ipsum, you <br />
-            need to be sure that isn't anything
+            need to be sure that is anything
             </p>
             <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg">Go Now</button>
           </div>
@@ -67,24 +67,7 @@ const Dashboard = () => {
           </div>
        </div>
 
-        {/* Metrics */}
-        <div className="grid grid-cols-3 gap-6 mt-6">
-          <div className="bg-white shadow-md p-4 rounded-lg">
-            <h3 className="text-gray-600">Total Active Users</h3>
-            <p className="text-3xl font-bold">18,765</p>
-            <p className="text-green-500">+2.6%</p>
-          </div>
-          <div className="bg-white shadow-md p-4 rounded-lg">
-            <h3 className="text-gray-600">Total Installed</h3>
-            <p className="text-3xl font-bold">4,876</p>
-            <p className="text-green-500">+0.2%</p>
-          </div>
-          <div className="bg-white shadow-md p-4 rounded-lg">
-            <h3 className="text-gray-600">Total Downloads</h3>
-            <p className="text-3xl font-bold">678</p>
-            <p className="text-red-500">-0.1%</p>
-          </div>
-        </div>
+       <DashboardCards></DashboardCards>
 
         {/* Charts */}
         <div className="grid grid-cols-2 gap-6 mt-6">
